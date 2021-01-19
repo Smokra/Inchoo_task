@@ -67,7 +67,7 @@ button {
 }
 
 .cart-box {
-  display: flex;
+  display: none;
   flex-direction: column;
   flex: 1 1 auto;
   max-width: 360px;
