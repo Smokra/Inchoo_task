@@ -22,18 +22,19 @@
         <h3>My Cart (6 items)</h3>
       </div>
 
-      <button id="prevButton" class="previous">
-        <img src="/images/Up.svg" alt="Button with previous function and arrow Up svg image.">
+      <button id="prevButton" class="previous" aria-label="Prvious button">
+        <img src="/images/Up.svg" alt="">
       </button>
 
-      <div id="wrapper" class="content">
+      <div class="content">
         <div class="items">
           <div class="product">
             <div class="product-image">
               <div>
                 <picture>
-                  <source srcset="/images/brake1-sm.webp 1x, /images/brake1-lg.webp 2x">
-                  <img src="/images/brake2-sm.png 1x, /images/brake2.png 2x" alt="Image with Brembo brake set.">
+                  <source srcset="/images/brake1-sm.webp 1x, /images/brake1-lg.webp 2x" type="image/webp">
+                  <source srcset="/images/brake2-sm.png 1x, /images/brake2.png 2x" type="image/png">
+                  <img src="/images/brake2.png" alt="Image with Brembo brake set.">
                 </picture>
               </div>
             </div>
@@ -49,8 +50,9 @@
             <div class="product-image">
               <div>
                 <picture>
-                  <source srcset="/images/brake2-sm.webp 1x, /images/brake2-lg.webp 2x">
-                  <img src="/images/brake2-sm.png 1x, /images/brake2.png 2x" alt="Image with EBC brake set.">
+                  <source srcset="/images/brake2-sm.webp 1x,/images/brake2-lg.webp 2x" type="image/webp">
+                  <source srcset="/images/brake2-sm.png 1x,/images/brake2.png 2x" type="image/png">
+                  <img src="/images/brake2.png" alt="Image with EBC brake set.">
                 </picture>
               </div>       
             </div>
@@ -66,8 +68,9 @@
             <div class="product-image">
               <div>
                 <picture>
-                  <source srcset="/images/filter1-sm.webp 1x, /images/filter1-lg.webp 2x">
-                  <img src="/images/filter1-sm.png 1x, /images/filter1.png 2x" alt="Image with Sport air filter.">
+                  <source srcset="/images/filter1-sm.webp 1x,/images/filter1-lg.webp 2x" type="image/webp">
+                  <source srcset="/images/filter1-sm.png 1x,/images/filter1.png 2x" type="image/png">
+                  <img src="/images/filter1.png" alt="Image with Sport air filter.">
                 </picture>
               </div>             
             </div>
@@ -83,8 +86,9 @@
             <div class="product-image">
               <div>
                 <picture>
-                  <source srcset="/images/filter2-sm.webp 1x, /images/filter2-lg.webp 2x">
-                  <img src="/images/filter2-sm.png 1x, /images/filter2.png 2x" alt="Image with Intake Cone filter.">
+                  <source srcset="/images/filter2-sm.webp 1x,/images/filter2-lg.webp 2x" type="image/webp">
+                  <source srcset="/images/filter2-sm.png 1x,/images/filter2.png 2x" type="image/png">
+                  <img src="/images/filter2.png" alt="Image with Intake Cone filter.">
                 </picture>
               </div>
             </div>
@@ -100,8 +104,9 @@
             <div class="product-image">
               <div>
                 <picture>
-                  <source srcset="/images/oil2-sm.webp 1x, /images/oil2-lg.webp 2x">
-                  <img src="/images/oil2-sm.png 1x, /images/oil2.png 2x" alt="Image with five liters engine oil.">
+                  <source srcset="/images/oil2-sm.webp 1x,/images/oil2-lg.webp 2x" type="image/webp">
+                  <source srcset="/images/oil2-sm.png 1x,/images/oil2.png 2x" type="image/png">
+                  <img src="/images/oil2.png" alt="Image with five liters engine oil.">
                 </picture>
               </div>
             </div>
@@ -117,8 +122,9 @@
             <div class="product-image">
               <div>
                 <picture>
-                  <source srcset="/images/oil1-sm.webp 1x, /images/oil1-lg.webp 2x">
-                  <img src="/images/oil1-sm.png 1x, /images/oil1.png 2x" alt="Image with one liter engine oil.">
+                  <source srcset="/images/oil1-sm.webp 1x,/images/oil1-lg.webp 2x" type="image/webp">
+                  <source srcset="/images/oil1-sm.png 1x,/images/oil1.png 2x" type="image/png">
+                  <img src="/images/oil1.png" alt="Image with one liter engine oil.">
                 </picture>
               </div>            
             </div>
@@ -133,20 +139,17 @@
       </div>
 
       <div class="bottom">
-        <button id="nextButton" class="next">
-          <img src="/images/Down.svg" alt="Button with next function and arrow Down svg image.">
+        <button id="nextButton" class="next" aria-label="Next button">
+          <img src="/images/Down.svg" alt="">
         </button>
         <div class="buttons">
-          <button class="edit">Edit Cart</button>
-          <button class="checkout">Checkout</button>
+          <button class="edit" aria-label="Edit cart">Edit Cart</button>
+          <button class="checkout" aria-label="Checkout">Checkout</button>
         </div>
       </div>
 
     </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/Draggable.min.js"></script>
-  <script src="/InertiaPlugin.min.js"></script>
   <script src="/script.js"></script>
 
 </body>

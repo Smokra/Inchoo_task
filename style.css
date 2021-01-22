@@ -122,6 +122,20 @@ button {
   overflow: hidden;
 }
 
+.items {
+  max-height: 696px;
+  overflow-y: auto;
+}
+
+.items::-webkit-scrollbar {
+  display: none;
+}
+
+.items {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .product {
   display: flex;
   flex-direction: row;
