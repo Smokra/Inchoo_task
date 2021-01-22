@@ -1,10 +1,6 @@
 function openCartBox() {
   const cartBox = document.querySelector("#cartBox");
-  if (cartBox.style.display === "flex") {
-    cartBox.style.display = "none";
-  } else {
-    cartBox.style.display = "flex";
-  }
+  cartBox.classList.toggle('open');
 }
 
 const prev = document.querySelector('#prevButton');

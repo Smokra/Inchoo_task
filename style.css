@@ -73,7 +73,7 @@ button {
 }
 
 .cart-box {
-  display: none;
+  display: flex;
   flex-direction: column;
   flex: 1 1 auto;
   max-width: 360px;
@@ -84,6 +84,10 @@ button {
   height: 509px;
   border: 0 solid #000000;
   filter: drop-shadow(0 5px 7px #00000045);
+}
+
+.cart-box:not(.open) {
+  display: none;
 }
 
 .cart-box::before {
