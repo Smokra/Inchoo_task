@@ -7,18 +7,15 @@
   <title>Frontend Crash Course Task</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Source+Serif+Pro&display=swap"
     rel="stylesheet">
 </head>
 
 <body>
   <div class="page-wrapper">
-    <button class="cart" onclick="openCartBox()">
-      <a href="#">
-        <img src="./images/shopping_cart.svg" alt="shopping cart">
-      </a>
-    </button>
+    <a href="#" class="cart" onclick="openCartBox()">
+      <img src="/images/shopping_cart.svg" alt="Anchor with shopping cart svg image.">
+    </a>
 
     <div id="cartBox" class="cart-box">
       <div class="title">
@@ -26,20 +23,22 @@
       </div>
 
       <button id="prevButton" class="previous">
-        <img src="./images/Up.svg" alt="previous button">
+        <img src="/images/Up.svg" alt="Button with previous function and arrow Up svg image.">
       </button>
 
       <div id="wrapper" class="content">
         <div class="items">
           <div class="product">
             <div class="product-image">
-              <picture>
-                <source srcset="./images/brake1.webp">
-                <img src="./images/brake2.png" alt="Brembo brake set">
-              </picture>
+              <div>
+                <picture>
+                  <source srcset="/images/brake1-sm.webp 1x, /images/brake1-lg.webp 2x">
+                  <img src="/images/brake2-sm.png 1x, /images/brake2.png 2x" alt="Image with Brembo brake set.">
+                </picture>
+              </div>
             </div>
             <div class="product-details">
-              <p>Set of GT-S Series Cross Drilled</p>
+              <h4>Set of GT-S Series Cross Drilled</h4>
               <p class="attribute">Brand: Brembo</p>
               <p class="attribute">Color: Red</p>
               <p class="price">1 x $1770.00</p>
@@ -48,76 +47,86 @@
 
           <div class="product">
             <div class="product-image">
-              <picture>
-                <source srcset="./images/brake2.webp">
-                <img src="./images/brake2.png" alt="EBC brake set">
-              </picture>
+              <div>
+                <picture>
+                  <source srcset="/images/brake2-sm.webp 1x, /images/brake2-lg.webp 2x">
+                  <img src="/images/brake2-sm.png 1x, /images/brake2.png 2x" alt="Image with EBC brake set.">
+                </picture>
+              </div>       
             </div>
             <div class="product-details">
-              <p>Set of GT Series</p>
+              <h4>Set of GT Series</h4>
               <p class="attribute">Brand: EBC</p>
               <p class="attribute">Color: Yellow</p>
-              <p class="price">1 x $1150.00</p>
+              <p class="price">1 × $1150.00</p>
             </div>
           </div>
 
           <div class="product">
             <div class="product-image">
-              <picture>
-                <source srcset="./images/filter1.webp">
-                <img src="./images/filter1.png" alt="Sport air filter">
-              </picture>
+              <div>
+                <picture>
+                  <source srcset="/images/filter1-sm.webp 1x, /images/filter1-lg.webp 2x">
+                  <img src="/images/filter1-sm.png 1x, /images/filter1.png 2x" alt="Image with Sport air filter.">
+                </picture>
+              </div>             
             </div>
             <div class="product-details">
-              <p>Air filter Sport</p>
+              <h4>Air filter Sport</h4>
               <p class="attribute">Brand: Proram</p>
               <p class="attribute">Diameter: 56mm </p>
-              <p class="price">1 x $235.00</p>
+              <p class="price">1 × $235.00</p>
             </div>
           </div>
 
           <div class="product">
             <div class="product-image">
-              <picture>
-                <source srcset="./images/filter2.webp">
-                <img src="./images/filter2.png" alt="Intake Cone filter">
-              </picture>
+              <div>
+                <picture>
+                  <source srcset="/images/filter2-sm.webp 1x, /images/filter2-lg.webp 2x">
+                  <img src="/images/filter2-sm.png 1x, /images/filter2.png 2x" alt="Image with Intake Cone filter.">
+                </picture>
+              </div>
             </div>
             <div class="product-details">
-              <p>Air Intake Cone filter</p>
+              <h4>Air Intake Cone filter</h4>
               <p class="attribute">Brand: Bosch</p>
               <p class="attribute">Diameter: 48mm</p>
-              <p class="price">1 x $318.00</p>
+              <p class="price">1 × $318.00</p>
             </div>
           </div>
 
           <div class="product">
             <div class="product-image">
-              <picture>
-                <source srcset="./images/oil2.webp">
-                <img src="./images/oil2.png" alt="Five liters engine oil">
-              </picture>
+              <div>
+                <picture>
+                  <source srcset="/images/oil2-sm.webp 1x, /images/oil2-lg.webp 2x">
+                  <img src="/images/oil2-sm.png 1x, /images/oil2.png 2x" alt="Image with five liters engine oil.">
+                </picture>
+              </div>
             </div>
             <div class="product-details">
-              <p>Sintetic Engine Oil</p>
+              <h4>Sintetic Engine Oil</h4>
               <p class="attribute">Brand: Total</p>
               <p class="attribute">Quantity: 5 liters</p>
-              <p class="price">1 x $95.00</p>
+              <p class="price">1 × $95.00</p>
             </div>
           </div>
 
           <div class="product">
             <div class="product-image">
-              <picture>
-                <source srcset="./images/oil1.webp">
-                <img src="./images/oil1.png" alt="One liter engine oil">
-              </picture>
+              <div>
+                <picture>
+                  <source srcset="/images/oil1-sm.webp 1x, /images/oil1-lg.webp 2x">
+                  <img src="/images/oil1-sm.png 1x, /images/oil1.png 2x" alt="Image with one liter engine oil.">
+                </picture>
+              </div>            
             </div>
             <div class="product-details">
-              <p>Engine Oil</p>
+              <h4>Engine Oil</h4>
               <p class="attribute">Brand: Pennzoi</p>
               <p class="attribute">Quantity: 1 liter</p>
-              <p class="price">1 x $32.00</p>
+              <p class="price">1 × $32.00</p>
             </div>
           </div>
         </div>
@@ -125,7 +134,7 @@
 
       <div class="bottom">
         <button id="nextButton" class="next">
-          <img src="./images/Down.svg" alt="next button">
+          <img src="/images/Down.svg" alt="Button with next function and arrow Down svg image.">
         </button>
         <div class="buttons">
           <button class="edit">Edit Cart</button>
@@ -137,8 +146,8 @@
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/Draggable.min.js"></script>
-  <script src="InertiaPlugin.min.js"></script>
-  <script src="script.js"></script>
+  <script src="/InertiaPlugin.min.js"></script>
+  <script src="/script.js"></script>
 
 </body>
 
